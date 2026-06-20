@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#000;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+/* Background Glow */
+body::before{
+    content:"";
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:#00aaff;
+    border-radius:50%;
+    filter:blur(180px);
+    opacity:.3;
+    left:-100px;
+    top:-100px;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:#aa00ff;
+    border-radius:50%;
+    filter:blur(180px);
+    opacity:.3;
+    right:-100px;
+    bottom:-100px;
+}
+
+/* Login Box */
+.login-box{
+    position:relative;
+    width:400px;
+    padding:40px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:25px;
+    box-shadow:
+        0 0 30px rgba(0,170,255,.3),
+        0 0 60px rgba(170,0,255,.2);
+}
+
+.login-box h1{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:42px;
+    background:linear-gradient(90deg,#00ffff,#00aaff,#aa00ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Inputs */
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box input{
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    background:rgba(255,255,255,0.08);
+    color:white;
+    font-size:16px;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.input-box input:focus{
+    box-shadow:0 0 15px #00aaff;
+}
+
+.input-box input::placeholder{
+    color:#bbb;
+}
+
+/* Button */
+.login-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(135deg,#00aaff,#aa00ff);
+    box-shadow:0 0 20px rgba(0,170,255,.5);
+    transition:.3s;
+}
+
+.login-btn:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 30px rgba(170,0,255,.8);
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+    <h1>LOGIN</h1>
+
+    <div class="input-box">
+        <input type="text" placeholder="Username">
+    </div>
+
+    <div class="input-box">
+        <input type="text" placeholder="ID">
+    </div>
+
+    <button class="login-btn">
+        Login
+    </button>
+</div>
+
+</body>
+</html>

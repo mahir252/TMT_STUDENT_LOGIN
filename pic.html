@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery Boxes</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#000;
+    min-height:100vh;
+    padding:40px;
+    color:white;
+}
+
+/* Heading */
+h1{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:50px;
+    background:linear-gradient(90deg,#00ffff,#0099ff,#bb00ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Container */
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+}
+
+/* Card */
+.card{
+    width:280px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:25px;
+    overflow:hidden;
+    backdrop-filter:blur(15px);
+    box-shadow:
+        0 0 20px rgba(0,170,255,.25),
+        0 0 40px rgba(170,0,255,.15);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:
+        0 0 35px rgba(0,170,255,.5),
+        0 0 60px rgba(170,0,255,.3);
+}
+
+/* Image Box */
+.image-box{
+    height:220px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        rgba(0,170,255,.15),
+        rgba(170,0,255,.15)
+    );
+    color:#888;
+    font-size:20px;
+}
+
+/* Title Box */
+.title-box{
+    padding:18px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    color:#fff;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Gallery</h1>
+
+<div class="container">
+    <a href="enter.html">
+     <button>
+    <div class="card">
+        <div class="image-box">
+          <img src="englishf.jpg">
+            Picture Here
+        </div>
+        <div class="title-box">
+            English first paper 
+                   2025
+        </div>
+    </div>
+     </button>
+    </a>
+    <a href="physics.html">
+    <div class="card">
+        <div class="image-box">
+            
+            <img src="p2.jpg">
+        </div>
+    </a>
+        <div class="title-box">
+            physics
+        </div>
+    </div>
+     <a href="h.html">
+    <div class="card">
+        <div class="image-box">
+            <img src="h1.jpg">
+        </div>
+    </a>
+        <div class="title-box">
+            Higher math
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#000;
+    color:white;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+/* Welcome Title */
+.welcome{
+    text-align:center;
+    font-size:60px;
+    font-weight:bold;
+    margin-bottom:40px;
+    background:linear-gradient(
+        90deg,
+        #00ffff,
+        #00aaff,
+        #aa00ff
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-shadow:0 0 25px rgba(0,255,255,.5);
+}
+
+/* Main Box */
+.content-box{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:
+    0 0 30px rgba(0,170,255,.3),
+    0 0 60px rgba(170,0,255,.15);
+
+    line-height:1.9;
+    font-size:18px;
+
+    transition:.4s;
+}
+
+.content-box:hover{
+    transform:translateY(-5px);
+    box-shadow:
+    0 0 40px rgba(0,170,255,.5),
+    0 0 80px rgba(170,0,255,.3);
+}
+
+.content-box h2{
+    color:#00ffff;
+    margin-bottom:15px;
+}
+
+.content-box p{
+    color:#ddd;
+    margin-bottom:15px;
+}
+</style>
+</head>
+<body>
+
+<h1 class="welcome">A message </h1>
+
+<div class="content-box">
+
+    <h2>বিশেষ দ্রষ্টব্য ১ </h2>
+    <p>
+       এই ওয়েবসাইটটি তামিরুল মিল্লাত কতৃক তৈরী করা হয় নি।
+       অতএব এই ওয়েবসাইট টি তামিরুল মিল্লাত এর কোনো ওয়েবসাইট নয়।
+    </p>
+
+    <h2>বিশেষ দ্রষ্টব্য ২</h2>
+    <p>
+      এই ওয়েবসাইট  থেকে আপনি আপনার ক্লাস অনুযায়ী পূর্বের বছরের প্রশ্ন 
+      গুলো বিনামূল্যে  পড়তে পারবেন ।
+    </p>
+
+    <h2>বিশেষ দ্রষ্টব্য ৩</h2>
+    <p>
+      এই ওয়েবসাইট টি শুধুই নবীন ছাত্রদের জন্য যারা মিল্লাত এ প্রথম পরীক্ষা দিবে,
+      যাতে করে তারা প্রশ্নের ধরণ বুঝতে পারে।
+      অতএব এই ওয়েবসাইট এ কোনো ধরণের অবৈধ কাজ করা হবে না ইনশাআল্লাহ।
+    </p>
+
+</div>
+
+</body>
+</html>

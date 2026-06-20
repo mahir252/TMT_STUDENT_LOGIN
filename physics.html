@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Image Box</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Box */
+.box{
+    display:inline-block;
+    padding:10px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:20px;
+    box-shadow:
+        0 0 30px rgba(0,170,255,0.3),
+        0 0 60px rgba(170,0,255,0.2);
+    backdrop-filter:blur(15px);
+}
+
+/* Image */
+.box img{
+    display:block;
+    max-width:100%;
+    height:auto;
+    border-radius:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <img src="physics.jpg" alt="Image">
+</div>
+
+<div class="box">
+    <img src="p2.jpg" alt="Image">
+
+</body>
+</html>

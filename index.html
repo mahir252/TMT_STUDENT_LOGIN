@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TMT student help center </title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#000;
+    min-height:100vh;
+    color:white;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+.btn{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+    box-shadow:0 0 20px rgba(0,114,255,.6);
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px) scale(1.05);
+    box-shadow:0 0 35px rgba(0,114,255,.9);
+}
+
+/* Welcome Box */
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height:80vh;
+    text-align:center;
+}
+
+.welcome-box{
+    padding:50px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.1);
+    box-shadow:
+    0 0 50px rgba(0,150,255,.3),
+    0 0 100px rgba(0,150,255,.15);
+    max-width:700px;
+}
+
+.welcome-box h1{
+    font-size:55px;
+    margin-bottom:15px;
+    background:linear-gradient(to right,#00c6ff,#7f5cff,#ff00ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.welcome-box p{
+    color:#ccc;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.button-group{
+    margin-top:30px;
+    display:flex;
+    gap:20px;
+    justify-content:center;
+}
+
+.main-btn{
+    padding:15px 40px;
+    border:none;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+    background:linear-gradient(135deg,#ff00ff,#7f5cff);
+    box-shadow:0 0 25px rgba(255,0,255,.5);
+    transition:.3s;
+}
+
+.main-btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 40px rgba(255,0,255,.9);
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <button class="btn"; onclick="alert('This feature is not available')">All question </button>
+    <button class="btn" onclick="location.href='login.html'">Login</button>
+</div>
+
+<div class="hero">
+    <div class="welcome-box">
+        <h1>WELCOME</h1>
+        <p>
+          Welcome to visit our website. this website helps you to get question. 
+          
+        </p>
+
+        <div class="button-group">
+            <button class="main-btn" onclick="location.href='pic.html'">Questions</button>
+             <a href="about.html">
+            <button class="main-btn"> A message </button>
+             </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
