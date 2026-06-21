@@ -112,7 +112,7 @@ body{
 
 <div class="navbar">
     <button class="btn"; onclick="location.href='pic.html'">All question </button>
-    <button class="btn" onclick="location.href='login.html'">Login</button>
+    <button class="btn" onclick="checkOwner()">Login</button>
 </div>
 
 <div class="hero">
@@ -127,10 +127,19 @@ body{
             <button class="main-btn" onclick="location.href='pic.html'">Questions</button>
              <a href="about.html">
             <button class="main-btn"> A message </button>
-             </a>
+             </a>     
         </div>
     </div>
 </div>
-
+<script>
+    function checkOwner(){
+               let result =confirm("are you owner")
+               if(result == true){
+                   window.location.href="login.html";
+               }else {
+                  alert("Access denied ") 
+               }
+    }
+</script>
 </body>
 </html>
